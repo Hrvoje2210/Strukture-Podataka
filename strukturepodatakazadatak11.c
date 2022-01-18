@@ -1,5 +1,3 @@
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -42,7 +40,7 @@ void InsertToHashArray(char *, char *, countryNode *);
 int FreeAll(countryNode *);
 
 int main() {
-	countryNode hashCountries[HASH_ARRAY_SIZE] = { {"", "", NULL, NULL} };
+    countryNode hashCountries[HASH_ARRAY_SIZE] = { {"", "", NULL, NULL} };
 
     InputCountriesFromFile(DRZAVE_FILE, hashCountries);
     PrintAll(hashCountries);
